@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simon Says Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="game-title">Simon Says</h1>
+
+    <div class="info-panel">
+      <button id="start-btn">Start Game</button>
+      <button id="reset-btn">Reset Game</button>
+      <div class="status">
+        <span>Level: <span id="level-num">0</span></span>
+        <span>Score: <span id="score-num">0</span></span>
+      </div>
+    </div>
+    <h2 id="message"></h2>
+<div id="game-over-visual" class="hidden">
+  <img src="https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif" alt="Oops!" />
+</div>
+
+
+
+    <div class="grid">
+      <div id="red" class="btn red"></div>
+      <div id="blue" class="btn blue"></div>
+      <div id="green" class="btn green"></div>
+      <div id="yellow" class="btn yellow"></div>
+    </div>
+    
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
